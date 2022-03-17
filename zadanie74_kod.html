@@ -1,0 +1,20 @@
+<textarea cols="100" rows="20">
+<html>
+<body>
+<script language="JavaScript">
+var l1_fis=prompt("Podaj pierwszą liczbę z zakresu <20,60>","");
+var l2_fis=prompt("Podaj drugą liczbę z zakresu <20,60>","");
+var pocz_fis=prompt("Podaj początkową wartość wielkości tekstu:","");
+var tekst_fis=prompt("wpisz dowolny tekst:","");
+
+if(l1_fis < 20 || l1_fis>60){document.write("Liczba "+l1_cym+" nie należy do przedziału <20,60>");}
+else if(l2_fis<20 || l2_fis>60){document.write("Liczba "+l2_fis+" nie należy do przedziału <20,60>");}
+else {
+if(l1_fis<l2_fis){for(var i=pocz_fis;i<=100; i++){if(i%5==0)document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_fis+"<br></p>");}}
+if(l1_fis>l2_fis){for(var i=pocz_fis;i>=0; i--){if(i%5==0)document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_fis+"<br></p>");}}
+}
+</script>
+</body>
+</html>
+</html>
+ </textarea>

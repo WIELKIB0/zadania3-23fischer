@@ -1,0 +1,17 @@
+<html>
+<head>
+ <script language="JavaScript">
+function a(){var x=prompt("pod wartość x=","");
+ document.write("wczytana wartość x="+x.toLowerCase()+"<br>"); 
+ if(x==1 || x.toLowerCase()=='czerwony' ) {document.write("<p style=\"font-size: 70px; color: red;\">wczytałeś kolor czerwony</p>"+"<br>");}
+ if(x==2 || x.toLowerCase()=='niebieski') {document.write("<p style=\"font-size: 10px; color: blue;\">wczytałeś kolor niebieski</p>"+"<br>");}
+return x;}
+</script>
+</head>
+<body>
+ <font size="20px" color="green">menu</font><br><br>
+ <font size="15px" color="red">1-CZERWONY</font><br>
+ <font size="15px" color="blue">2-NIEBIESKI</font><br>
+ <input type="button" name="przycisk" value="Oblicz" onclick="a()">
+</body>
+</html>

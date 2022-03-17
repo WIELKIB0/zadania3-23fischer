@@ -1,0 +1,26 @@
+<textarea cols="100" rows="20">
+<html>
+<head>
+<title> Zadanie 78 Fischer </title>
+<script language="JavaScript">
+var liczba1=prompt("R=","");
+var R=parseFloat(liczba1);
+var licznik_fis=0;
+for ( var i=-R; i<=R; i++)
+{
+document.write("   ");
+for ( var j=R; j<=R; j++)
+{
+d=Math.sqrt(i*i+j*j);
+if(d<=R){licznik_fis++;}
+document.write("("+i+" , "+j+")"+"      ");
+}
+document.write("<br>");
+}
+document.write("N="+licznik_fis);
+
+
+
+</script>
+</head>
+</textarea>
